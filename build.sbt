@@ -1,4 +1,4 @@
-name := "altu-domain"
+import Dependencies._
 
 scalaVersion := "2.12.4"
 
@@ -11,8 +11,7 @@ lazy val commonSetting = Seq(
 lazy val root = (project in file("."))
   .settings(
     commonSetting,
-    name := "Altu Domain Module",
-    publishLocal := (),
+    name := "Altu Domain Module"
   )
   .aggregate(core)
 
@@ -20,6 +19,6 @@ lazy val core = (project in file("core"))
   .settings(
     commonSetting,
     name := "Altu Domain Core",
-    publishLocal := (),
+    libraryDependencies ++= akkaDeps
   )
         

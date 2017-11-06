@@ -1,5 +1,4 @@
 package org.psolution.altu.domain
 
-class Entity {
-
+class OutputEvent extends Event{
 }

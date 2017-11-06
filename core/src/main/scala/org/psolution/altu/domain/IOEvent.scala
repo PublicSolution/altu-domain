@@ -1,5 +1,4 @@
 package org.psolution.altu.domain
 
-trait Command {
-
+class IOEvent extends Event{
 }

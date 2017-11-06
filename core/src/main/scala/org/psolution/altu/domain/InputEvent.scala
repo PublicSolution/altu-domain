@@ -1,5 +1,4 @@
 package org.psolution.altu.domain
 
-class DomainEvent{
-
+class InputEvent extends Event{
 }
